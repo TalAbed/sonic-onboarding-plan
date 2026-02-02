@@ -1,0 +1,501 @@
+product_id,name,price,category
+1,iPhone 15,1201.71,Books
+2,MacBook Pro,1374.61,Sports
+3,iPad Air,2244.2,Food
+4,AirPods Pro,2298.7,Beauty
+5,Samsung TV,2526.01,Food
+6,Laptop Stand,135.22,Books
+7,USB-C Cable,2950.22,Home
+8,Monitor,2891.29,Sports
+9,Keyboard,2250.75,Home
+10,Mouse,2794.19,Beauty
+11,T-Shirt,2081.93,Books
+12,Jeans,2209.45,Clothing
+13,Hoodie,1580.88,Sports
+14,Shoes,955.66,Sports
+15,Hat,2426.57,Beauty
+16,Coffee Maker,1122.74,Sports
+17,Blender,1608.23,Books
+18,Toaster,387.38,Clothing
+19,Microwave,1519.91,Books
+20,Desk Lamp,1005.11,Food
+21,Running Shoes,2671.43,Beauty
+22,Yoga Mat,1577.46,Electronics
+23,Dumbbell Set,2586.95,Books
+24,Bicycle,621.21,Food
+25,Tent,38.3,Beauty
+26,Python Book,2828.35,Sports
+27,SQL Guide,2334.13,Home
+28,Data Science,2997.0,Home
+29,Machine Learning,1443.43,Sports
+30,Web Dev,2569.03,Food
+31,Desk Chair,691.11,Books
+32,Filing Cabinet,1169.1,Home
+33,Bookshelf,1925.63,Sports
+34,Desk Organizer,697.87,Books
+35,Whiteboard,2941.22,Beauty
+36,Coffee Mug,1328.71,Beauty
+37,Water Bottle,1166.95,Books
+38,Lunch Box,374.37,Books
+39,Plate Set,1077.15,Clothing
+40,Utensil Set,2395.75,Sports
+41,Jacket,2156.99,Books
+42,Pants,2476.23,Beauty
+43,Sweater,941.93,Books
+44,Socks,40.76,Books
+45,Gloves,304.02,Books
+46,Headphones,850.04,Electronics
+47,Speaker,1016.34,Electronics
+48,Microphone,1518.5,Books
+49,USB Hub,1666.21,Sports
+50,External Drive,2733.12,Home
+51,iPhone 15 v2,1468.43,Food
+52,MacBook Pro v2,531.32,Electronics
+53,iPad Air v2,1083.1,Electronics
+54,AirPods Pro v2,1583.99,Clothing
+55,Samsung TV v2,338.83,Clothing
+56,Laptop Stand v2,1978.89,Food
+57,USB-C Cable v2,2967.55,Books
+58,Monitor v2,149.96,Beauty
+59,Keyboard v2,1732.01,Electronics
+60,Mouse v2,588.69,Books
+61,T-Shirt v2,2186.94,Books
+62,Jeans v2,2264.62,Beauty
+63,Hoodie v2,2080.1,Books
+64,Shoes v2,865.45,Sports
+65,Hat v2,2821.37,Clothing
+66,Coffee Maker v2,1728.67,Books
+67,Blender v2,485.38,Books
+68,Toaster v2,1057.19,Clothing
+69,Microwave v2,2495.11,Home
+70,Desk Lamp v2,1727.79,Beauty
+71,Running Shoes v2,765.97,Books
+72,Yoga Mat v2,1946.43,Beauty
+73,Dumbbell Set v2,152.54,Beauty
+74,Bicycle v2,236.48,Sports
+75,Tent v2,2989.44,Sports
+76,Python Book v2,1221.83,Home
+77,SQL Guide v2,2680.47,Food
+78,Data Science v2,2764.0,Clothing
+79,Machine Learning v2,1979.87,Beauty
+80,Web Dev v2,2702.06,Beauty
+81,Desk Chair v2,2856.45,Electronics
+82,Filing Cabinet v2,2249.32,Clothing
+83,Bookshelf v2,1003.97,Home
+84,Desk Organizer v2,2625.21,Beauty
+85,Whiteboard v2,1287.07,Home
+86,Coffee Mug v2,935.51,Home
+87,Water Bottle v2,1486.99,Sports
+88,Lunch Box v2,620.13,Sports
+89,Plate Set v2,2962.0,Books
+90,Utensil Set v2,1947.06,Home
+91,Jacket v2,936.19,Clothing
+92,Pants v2,986.91,Beauty
+93,Sweater v2,681.63,Books
+94,Socks v2,1310.93,Food
+95,Gloves v2,671.72,Home
+96,Headphones v2,1951.72,Books
+97,Speaker v2,1036.7,Home
+98,Microphone v2,1099.72,Books
+99,USB Hub v2,1898.24,Clothing
+100,External Drive v2,292.73,Sports
+101,iPhone 15 v3,2248.7,Home
+102,MacBook Pro v3,1092.39,Beauty
+103,iPad Air v3,1479.71,Home
+104,AirPods Pro v3,2962.66,Food
+105,Samsung TV v3,86.42,Clothing
+106,Laptop Stand v3,2378.03,Electronics
+107,USB-C Cable v3,1576.07,Beauty
+108,Monitor v3,1431.69,Books
+109,Keyboard v3,653.16,Clothing
+110,Mouse v3,15.08,Clothing
+111,T-Shirt v3,1024.44,Food
+112,Jeans v3,362.63,Clothing
+113,Hoodie v3,645.17,Home
+114,Shoes v3,1798.61,Food
+115,Hat v3,1666.27,Beauty
+116,Coffee Maker v3,1873.46,Books
+117,Blender v3,1219.89,Clothing
+118,Toaster v3,124.24,Beauty
+119,Microwave v3,1086.27,Beauty
+120,Desk Lamp v3,2483.45,Clothing
+121,Running Shoes v3,567.74,Books
+122,Yoga Mat v3,1095.73,Home
+123,Dumbbell Set v3,330.83,Books
+124,Bicycle v3,366.54,Clothing
+125,Tent v3,2881.68,Home
+126,Python Book v3,1781.85,Books
+127,SQL Guide v3,1919.4,Sports
+128,Data Science v3,1514.42,Food
+129,Machine Learning v3,547.45,Home
+130,Web Dev v3,2109.69,Beauty
+131,Desk Chair v3,2115.24,Beauty
+132,Filing Cabinet v3,1732.92,Beauty
+133,Bookshelf v3,1697.25,Food
+134,Desk Organizer v3,2877.62,Books
+135,Whiteboard v3,441.75,Clothing
+136,Coffee Mug v3,171.28,Electronics
+137,Water Bottle v3,588.36,Clothing
+138,Lunch Box v3,2678.01,Books
+139,Plate Set v3,2840.29,Books
+140,Utensil Set v3,711.68,Food
+141,Jacket v3,69.99,Sports
+142,Pants v3,2100.73,Clothing
+143,Sweater v3,2235.0,Books
+144,Socks v3,749.71,Books
+145,Gloves v3,2142.28,Electronics
+146,Headphones v3,2815.82,Beauty
+147,Speaker v3,953.41,Clothing
+148,Microphone v3,822.68,Food
+149,USB Hub v3,1229.75,Sports
+150,External Drive v3,1314.07,Sports
+151,iPhone 15 v4,700.6,Beauty
+152,MacBook Pro v4,1014.13,Beauty
+153,iPad Air v4,1994.86,Electronics
+154,AirPods Pro v4,1476.02,Sports
+155,Samsung TV v4,762.9,Home
+156,Laptop Stand v4,787.85,Books
+157,USB-C Cable v4,872.17,Clothing
+158,Monitor v4,1154.15,Books
+159,Keyboard v4,2385.14,Food
+160,Mouse v4,1150.66,Beauty
+161,T-Shirt v4,1010.88,Books
+162,Jeans v4,2542.91,Food
+163,Hoodie v4,2134.17,Electronics
+164,Shoes v4,426.24,Clothing
+165,Hat v4,662.96,Beauty
+166,Coffee Maker v4,1156.41,Beauty
+167,Blender v4,2019.35,Clothing
+168,Toaster v4,231.85,Beauty
+169,Microwave v4,2416.56,Beauty
+170,Desk Lamp v4,2241.52,Electronics
+171,Running Shoes v4,103.25,Sports
+172,Yoga Mat v4,2872.65,Books
+173,Dumbbell Set v4,2529.82,Sports
+174,Bicycle v4,2216.3,Books
+175,Tent v4,1430.36,Food
+176,Python Book v4,872.37,Sports
+177,SQL Guide v4,2366.34,Home
+178,Data Science v4,1754.93,Beauty
+179,Machine Learning v4,1054.41,Sports
+180,Web Dev v4,1091.04,Sports
+181,Desk Chair v4,1814.51,Sports
+182,Filing Cabinet v4,1316.33,Home
+183,Bookshelf v4,1344.73,Food
+184,Desk Organizer v4,487.42,Food
+185,Whiteboard v4,1544.73,Food
+186,Coffee Mug v4,2992.8,Sports
+187,Water Bottle v4,2896.38,Sports
+188,Lunch Box v4,2654.48,Home
+189,Plate Set v4,2937.99,Home
+190,Utensil Set v4,2005.26,Food
+191,Jacket v4,1751.36,Beauty
+192,Pants v4,1418.96,Sports
+193,Sweater v4,1851.57,Electronics
+194,Socks v4,1889.38,Beauty
+195,Gloves v4,1721.06,Home
+196,Headphones v4,1684.18,Books
+197,Speaker v4,2483.49,Electronics
+198,Microphone v4,2406.43,Electronics
+199,USB Hub v4,173.6,Electronics
+200,External Drive v4,522.63,Books
+201,iPhone 15 v5,1559.4,Sports
+202,MacBook Pro v5,2335.84,Electronics
+203,iPad Air v5,114.9,Beauty
+204,AirPods Pro v5,2701.02,Beauty
+205,Samsung TV v5,1270.94,Beauty
+206,Laptop Stand v5,1291.7,Sports
+207,USB-C Cable v5,2648.82,Books
+208,Monitor v5,1916.02,Home
+209,Keyboard v5,843.76,Sports
+210,Mouse v5,1956.73,Food
+211,T-Shirt v5,592.93,Food
+212,Jeans v5,65.01,Clothing
+213,Hoodie v5,2509.79,Sports
+214,Shoes v5,2206.94,Beauty
+215,Hat v5,1671.79,Books
+216,Coffee Maker v5,1494.34,Books
+217,Blender v5,1145.67,Sports
+218,Toaster v5,1141.55,Sports
+219,Microwave v5,1382.59,Books
+220,Desk Lamp v5,576.72,Food
+221,Running Shoes v5,1308.82,Clothing
+222,Yoga Mat v5,1783.81,Electronics
+223,Dumbbell Set v5,1484.27,Sports
+224,Bicycle v5,2403.1,Sports
+225,Tent v5,170.73,Books
+226,Python Book v5,2506.95,Books
+227,SQL Guide v5,851.94,Clothing
+228,Data Science v5,486.8,Sports
+229,Machine Learning v5,877.81,Sports
+230,Web Dev v5,2868.91,Beauty
+231,Desk Chair v5,172.09,Clothing
+232,Filing Cabinet v5,476.24,Books
+233,Bookshelf v5,1024.86,Home
+234,Desk Organizer v5,2396.52,Food
+235,Whiteboard v5,1716.2,Electronics
+236,Coffee Mug v5,172.67,Home
+237,Water Bottle v5,304.85,Sports
+238,Lunch Box v5,585.15,Clothing
+239,Plate Set v5,1717.32,Clothing
+240,Utensil Set v5,994.67,Electronics
+241,Jacket v5,139.77,Electronics
+242,Pants v5,1095.33,Food
+243,Sweater v5,502.47,Home
+244,Socks v5,1952.15,Electronics
+245,Gloves v5,672.96,Clothing
+246,Headphones v5,2054.11,Sports
+247,Speaker v5,239.5,Clothing
+248,Microphone v5,1709.78,Home
+249,USB Hub v5,1337.97,Sports
+250,External Drive v5,1647.31,Electronics
+251,iPhone 15 v6,782.25,Clothing
+252,MacBook Pro v6,2650.95,Clothing
+253,iPad Air v6,649.04,Sports
+254,AirPods Pro v6,1809.9,Books
+255,Samsung TV v6,1525.24,Food
+256,Laptop Stand v6,1395.99,Electronics
+257,USB-C Cable v6,1685.94,Electronics
+258,Monitor v6,680.12,Beauty
+259,Keyboard v6,1000.47,Electronics
+260,Mouse v6,141.95,Beauty
+261,T-Shirt v6,1498.88,Sports
+262,Jeans v6,2126.94,Books
+263,Hoodie v6,767.96,Beauty
+264,Shoes v6,1670.21,Home
+265,Hat v6,956.91,Food
+266,Coffee Maker v6,719.11,Food
+267,Blender v6,2482.71,Clothing
+268,Toaster v6,2601.82,Clothing
+269,Microwave v6,1634.05,Sports
+270,Desk Lamp v6,2702.8,Beauty
+271,Running Shoes v6,1679.44,Clothing
+272,Yoga Mat v6,2904.2,Books
+273,Dumbbell Set v6,2590.24,Books
+274,Bicycle v6,738.78,Sports
+275,Tent v6,646.7,Books
+276,Python Book v6,1736.79,Sports
+277,SQL Guide v6,2222.72,Beauty
+278,Data Science v6,625.32,Clothing
+279,Machine Learning v6,1552.51,Electronics
+280,Web Dev v6,1158.47,Home
+281,Desk Chair v6,2957.14,Books
+282,Filing Cabinet v6,1898.35,Home
+283,Bookshelf v6,2426.7,Food
+284,Desk Organizer v6,1834.8,Sports
+285,Whiteboard v6,2956.56,Home
+286,Coffee Mug v6,385.46,Sports
+287,Water Bottle v6,2213.46,Home
+288,Lunch Box v6,861.43,Books
+289,Plate Set v6,326.97,Beauty
+290,Utensil Set v6,237.98,Food
+291,Jacket v6,829.78,Sports
+292,Pants v6,1318.66,Clothing
+293,Sweater v6,2366.32,Home
+294,Socks v6,2958.84,Clothing
+295,Gloves v6,2902.52,Food
+296,Headphones v6,2601.31,Home
+297,Speaker v6,37.57,Electronics
+298,Microphone v6,1632.21,Books
+299,USB Hub v6,389.04,Clothing
+300,External Drive v6,2878.63,Home
+301,iPhone 15 v7,1173.99,Beauty
+302,MacBook Pro v7,1409.66,Beauty
+303,iPad Air v7,921.43,Beauty
+304,AirPods Pro v7,241.81,Electronics
+305,Samsung TV v7,2241.46,Home
+306,Laptop Stand v7,1847.36,Sports
+307,USB-C Cable v7,618.42,Beauty
+308,Monitor v7,2142.99,Beauty
+309,Keyboard v7,1672.64,Home
+310,Mouse v7,1061.12,Electronics
+311,T-Shirt v7,1473.22,Beauty
+312,Jeans v7,2287.37,Clothing
+313,Hoodie v7,2572.99,Beauty
+314,Shoes v7,2888.19,Beauty
+315,Hat v7,798.03,Clothing
+316,Coffee Maker v7,1046.68,Clothing
+317,Blender v7,1699.96,Electronics
+318,Toaster v7,1748.29,Books
+319,Microwave v7,787.71,Sports
+320,Desk Lamp v7,151.07,Home
+321,Running Shoes v7,2048.03,Books
+322,Yoga Mat v7,2910.62,Clothing
+323,Dumbbell Set v7,1410.89,Sports
+324,Bicycle v7,2210.02,Sports
+325,Tent v7,244.45,Sports
+326,Python Book v7,2932.85,Home
+327,SQL Guide v7,720.02,Sports
+328,Data Science v7,2625.62,Clothing
+329,Machine Learning v7,564.13,Books
+330,Web Dev v7,2331.81,Clothing
+331,Desk Chair v7,1055.51,Books
+332,Filing Cabinet v7,1883.65,Home
+333,Bookshelf v7,2122.91,Clothing
+334,Desk Organizer v7,316.49,Electronics
+335,Whiteboard v7,596.47,Clothing
+336,Coffee Mug v7,1799.42,Food
+337,Water Bottle v7,809.13,Sports
+338,Lunch Box v7,1361.11,Food
+339,Plate Set v7,1590.17,Beauty
+340,Utensil Set v7,1188.98,Sports
+341,Jacket v7,1798.0,Books
+342,Pants v7,2620.33,Books
+343,Sweater v7,1175.98,Books
+344,Socks v7,1518.1,Clothing
+345,Gloves v7,2003.07,Clothing
+346,Headphones v7,2749.42,Sports
+347,Speaker v7,1685.8,Food
+348,Microphone v7,638.87,Electronics
+349,USB Hub v7,871.0,Sports
+350,External Drive v7,2972.31,Home
+351,iPhone 15 v8,502.91,Beauty
+352,MacBook Pro v8,2344.79,Clothing
+353,iPad Air v8,1849.46,Beauty
+354,AirPods Pro v8,2736.47,Clothing
+355,Samsung TV v8,2195.26,Beauty
+356,Laptop Stand v8,912.68,Home
+357,USB-C Cable v8,2873.41,Sports
+358,Monitor v8,848.8,Clothing
+359,Keyboard v8,2588.91,Food
+360,Mouse v8,1506.49,Clothing
+361,T-Shirt v8,224.31,Clothing
+362,Jeans v8,424.14,Books
+363,Hoodie v8,2775.37,Home
+364,Shoes v8,1009.41,Books
+365,Hat v8,2188.14,Electronics
+366,Coffee Maker v8,2950.92,Electronics
+367,Blender v8,688.68,Sports
+368,Toaster v8,2559.67,Beauty
+369,Microwave v8,2268.5,Electronics
+370,Desk Lamp v8,1145.79,Home
+371,Running Shoes v8,1992.91,Home
+372,Yoga Mat v8,2398.83,Clothing
+373,Dumbbell Set v8,2066.63,Beauty
+374,Bicycle v8,1108.22,Sports
+375,Tent v8,1922.55,Sports
+376,Python Book v8,1726.86,Books
+377,SQL Guide v8,603.22,Food
+378,Data Science v8,2450.08,Books
+379,Machine Learning v8,2377.91,Food
+380,Web Dev v8,2343.51,Electronics
+381,Desk Chair v8,2015.13,Beauty
+382,Filing Cabinet v8,237.16,Clothing
+383,Bookshelf v8,51.13,Sports
+384,Desk Organizer v8,1209.93,Food
+385,Whiteboard v8,378.61,Sports
+386,Coffee Mug v8,1497.64,Beauty
+387,Water Bottle v8,974.72,Electronics
+388,Lunch Box v8,2916.58,Clothing
+389,Plate Set v8,2827.1,Books
+390,Utensil Set v8,2599.41,Clothing
+391,Jacket v8,1745.03,Books
+392,Pants v8,571.1,Clothing
+393,Sweater v8,2433.36,Books
+394,Socks v8,2309.4,Sports
+395,Gloves v8,1048.37,Beauty
+396,Headphones v8,503.59,Home
+397,Speaker v8,417.18,Books
+398,Microphone v8,1975.06,Food
+399,USB Hub v8,968.58,Sports
+400,External Drive v8,564.29,Home
+401,iPhone 15 v9,1956.72,Electronics
+402,MacBook Pro v9,991.71,Electronics
+403,iPad Air v9,2475.06,Food
+404,AirPods Pro v9,936.22,Home
+405,Samsung TV v9,1896.68,Food
+406,Laptop Stand v9,477.77,Food
+407,USB-C Cable v9,2990.05,Food
+408,Monitor v9,1688.96,Books
+409,Keyboard v9,2238.1,Home
+410,Mouse v9,2718.11,Food
+411,T-Shirt v9,2952.25,Food
+412,Jeans v9,1173.09,Books
+413,Hoodie v9,1880.99,Food
+414,Shoes v9,1846.62,Clothing
+415,Hat v9,307.39,Books
+416,Coffee Maker v9,1453.55,Sports
+417,Blender v9,2075.26,Books
+418,Toaster v9,2663.34,Home
+419,Microwave v9,1479.44,Books
+420,Desk Lamp v9,149.91,Books
+421,Running Shoes v9,544.94,Food
+422,Yoga Mat v9,704.98,Sports
+423,Dumbbell Set v9,200.7,Sports
+424,Bicycle v9,98.26,Sports
+425,Tent v9,180.26,Food
+426,Python Book v9,1330.64,Beauty
+427,SQL Guide v9,371.85,Clothing
+428,Data Science v9,1605.72,Books
+429,Machine Learning v9,74.92,Sports
+430,Web Dev v9,227.39,Sports
+431,Desk Chair v9,1138.43,Sports
+432,Filing Cabinet v9,691.02,Home
+433,Bookshelf v9,459.24,Beauty
+434,Desk Organizer v9,1101.93,Books
+435,Whiteboard v9,2603.11,Beauty
+436,Coffee Mug v9,2799.67,Beauty
+437,Water Bottle v9,1424.23,Clothing
+438,Lunch Box v9,728.86,Food
+439,Plate Set v9,2918.07,Sports
+440,Utensil Set v9,901.23,Food
+441,Jacket v9,1908.64,Home
+442,Pants v9,28.87,Sports
+443,Sweater v9,1713.03,Clothing
+444,Socks v9,956.55,Beauty
+445,Gloves v9,228.55,Clothing
+446,Headphones v9,1877.5,Books
+447,Speaker v9,1401.0,Clothing
+448,Microphone v9,465.4,Books
+449,USB Hub v9,2238.88,Electronics
+450,External Drive v9,1711.31,Electronics
+451,iPhone 15 v10,2697.25,Sports
+452,MacBook Pro v10,1209.65,Sports
+453,iPad Air v10,217.65,Home
+454,AirPods Pro v10,2300.58,Sports
+455,Samsung TV v10,1185.76,Clothing
+456,Laptop Stand v10,2719.31,Home
+457,USB-C Cable v10,1261.34,Beauty
+458,Monitor v10,2668.87,Beauty
+459,Keyboard v10,2718.81,Books
+460,Mouse v10,1526.62,Electronics
+461,T-Shirt v10,2837.62,Food
+462,Jeans v10,350.45,Electronics
+463,Hoodie v10,2211.77,Clothing
+464,Shoes v10,2211.78,Food
+465,Hat v10,1897.46,Sports
+466,Coffee Maker v10,232.64,Beauty
+467,Blender v10,1971.96,Home
+468,Toaster v10,639.29,Food
+469,Microwave v10,1379.52,Electronics
+470,Desk Lamp v10,1557.04,Beauty
+471,Running Shoes v10,1967.76,Food
+472,Yoga Mat v10,580.72,Food
+473,Dumbbell Set v10,1660.62,Beauty
+474,Bicycle v10,1693.24,Books
+475,Tent v10,1151.13,Food
+476,Python Book v10,1164.08,Clothing
+477,SQL Guide v10,1240.59,Sports
+478,Data Science v10,339.51,Sports
+479,Machine Learning v10,749.72,Clothing
+480,Web Dev v10,1052.16,Electronics
+481,Desk Chair v10,641.05,Electronics
+482,Filing Cabinet v10,167.81,Beauty
+483,Bookshelf v10,1140.32,Food
+484,Desk Organizer v10,1796.33,Electronics
+485,Whiteboard v10,34.67,Sports
+486,Coffee Mug v10,1701.27,Food
+487,Water Bottle v10,1916.88,Home
+488,Lunch Box v10,1121.16,Food
+489,Plate Set v10,2226.24,Home
+490,Utensil Set v10,1354.99,Sports
+491,Jacket v10,321.52,Sports
+492,Pants v10,1855.41,Electronics
+493,Sweater v10,516.56,Food
+494,Socks v10,260.83,Beauty
+495,Gloves v10,72.81,Sports
+496,Headphones v10,1316.81,Clothing
+497,Speaker v10,1307.33,Books
+498,Microphone v10,570.85,Sports
+499,USB Hub v10,2136.95,Sports
+500,External Drive v10,2304.99,Home
