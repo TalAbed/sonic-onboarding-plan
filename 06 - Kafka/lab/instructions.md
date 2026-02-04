@@ -24,36 +24,13 @@ You're building a real-time event streaming system for a real estate platform. Y
 
 ---
 
-## Sub-Task 1: Kafka Setup & Topics (15 minutes)
+## Sub-Task 1: Kafka Setup & Topics
 
 **Objective:** Start Kafka cluster and create topics
 
 ### The Challenge
 
 You need to start a Kafka cluster and create 3 topics with appropriate partition and replication settings.
-
-### Hints
-
-**Step 1: Start Kafka with Docker Compose**
-- Create a docker-compose.yml file that starts a 3-broker Kafka cluster with Zookeeper
-- Start the cluster using docker-compose
-- Verify all containers are running and healthy
-- Wait for the cluster to be fully ready (check broker logs)
-
-**Step 2: Create topics using AdminClient**
-- Connect to the Kafka cluster using KafkaAdminClient
-- Create 3 topics with the following configuration:
-  - Topic: `listings` → 3 partitions, replication factor 3
-  - Topic: `views` → 3 partitions, replication factor 3
-  - Topic: `offers` → 2 partitions, replication factor 3
-- Handle creation completion and any errors
-
-**Step 3: Verify topics created**
-- List all topics in the cluster
-- For each topic (listings, views, offers):
-  - Show the number of partitions
-  - Display partition details
-  - Verify replication factor
 
 ### Your Tasks
 
@@ -77,16 +54,6 @@ You need to start a Kafka cluster and create 3 topics with appropriate partition
    - Show broker IDs
    - Verify topic distribution across brokers
 
-### Validation Checklist
-
-- [ ] 3 Kafka brokers are running and healthy
-- [ ] Zookeeper is running
-- [ ] Topic `listings` exists with 3 partitions
-- [ ] Topic `views` exists with 3 partitions
-- [ ] Topic `offers` exists with 2 partitions
-- [ ] All topics have replication factor of 3
-- [ ] All partitions have a leader elected
-
 ### Questions to Consider
 
 - Why do we create 3 partitions for some topics but only 2 for others?
@@ -97,7 +64,7 @@ You need to start a Kafka cluster and create 3 topics with appropriate partition
 
 ---
 
-## Sub-Task 2: Message Producers (20 minutes)
+## Sub-Task 2: Message Producers
 
 **Objective:** Send events to Kafka topics
 
@@ -128,7 +95,7 @@ Key: property_id (to keep offers for same property together)
 Topic: offers
 ```
 
-### Hints
+### Your Tasks
 
 **Step 1: Create listings producer**
 - Initialize a KafkaProducer that connects to the Kafka cluster
@@ -157,53 +124,6 @@ Topic: offers
 - Verify all messages are eventually delivered
 - Print summary of total messages sent per topic
 
-### Your Tasks
-
-1. **Create listings producer:**
-   - Generate 10 listing events with unique property IDs
-   - Assign each listing to one of 5 different agents
-   - Include realistic pricing (starting from $1.4M+)
-   - Use agent_id as the key
-   - Send to `listings` topic
-
-2. **Create views producer:**
-   - Generate 20 property view events
-   - Distribute views across 10 different properties
-   - Include realistic view durations (60+ seconds)
-   - Vary the action (viewed vs scheduled_tour)
-   - Use property_id as the key
-   - Send to `views` topic
-
-3. **Create offers producer:**
-   - Generate 5 purchase offer events
-   - Assign to 5 different properties
-   - Include offer prices, contingencies, and close dates
-   - Use property_id as the key
-   - Send to `offers` topic
-
-4. **Verify delivery:**
-   - Confirm all messages sent successfully
-   - Print message count for each topic (10, 20, 5)
-   - Show which partition each message was assigned to
-   - Display offset assigned to each message
-
-5. **Add error handling:**
-   - Catch send failures
-   - Print error messages for any failures
-   - Ensure all events eventually send
-   - Report total successful deliveries
-
-### Validation Checklist
-
-- [ ] 10 listing events sent to `listings` topic
-- [ ] 20 view events sent to `views` topic
-- [ ] 5 offer events sent to `offers` topic
-- [ ] Each message has an event_id
-- [ ] Each message has the correct key assigned
-- [ ] Each message is assigned to a partition
-- [ ] Each message receives an offset
-- [ ] Total message count is 35
-
 ### Questions to Consider
 
 - Why did we use different keys for different event types?
@@ -214,7 +134,7 @@ Topic: offers
 
 ---
 
-## Sub-Task 3: Message Consumers (20 minutes)
+## Sub-Task 3: Message Consumers
 
 **Objective:** Read and process events from Kafka topics
 
@@ -236,7 +156,7 @@ Create 3 consumers that read from the topics you populated in Sub-Task 2. Use co
 - Subscribes to: `offers` topic
 - Purpose: Process and approve purchase offers
 
-### Hints
+### Your Tasks
 
 **Step 1: Create listings consumer**
 - Create a KafkaConsumer that connects to the Kafka cluster
@@ -277,51 +197,6 @@ Create 3 consumers that read from the topics you populated in Sub-Task 2. Use co
 - Track which consumer group is reading the messages
 - Understand how Kafka tracks consumer position
 
-### Your Tasks
-
-1. **Create listings consumer:**
-   - Subscribe to `listings` topic
-   - Use consumer group `notifications`
-   - Read and print each listing event
-   - Display property address and price
-   - Count total messages received
-
-2. **Create views consumer:**
-   - Subscribe to `views` topic
-   - Use consumer group `analytics`
-   - Print view details (property, user, duration)
-   - Count total view events
-
-3. **Create offers consumer:**
-   - Subscribe to `offers` topic
-   - Use consumer group `approval-system`
-   - Display offer information (property, buyer, price)
-   - Count total offers received
-
-4. **Create multi-topic consumer:**
-   - Subscribe to all 3 topics at once
-   - Use consumer group `dashboard`
-   - Show which topic each message came from
-   - Print the event details
-   - Display total count of all messages (should be 35)
-
-5. **Track offset progression:**
-   - Print partition number for each message
-   - Print offset number for each message
-   - Notice offsets increase sequentially
-   - Understand consumer position tracking
-
-### Validation Checklist
-
-- [ ] Listings consumer receives 10 messages
-- [ ] Views consumer receives 20 messages
-- [ ] Offers consumer receives 5 messages
-- [ ] Multi-topic consumer receives 35 messages total
-- [ ] Each message has partition and offset information
-- [ ] Each message is successfully deserialized
-- [ ] Consumer groups are correctly identified
-- [ ] All messages are from the expected time period
-
 ### Questions to Consider
 
 - What does `auto_offset_reset='earliest'` do?
@@ -332,7 +207,7 @@ Create 3 consumers that read from the topics you populated in Sub-Task 2. Use co
 
 ---
 
-## Sub-Task 4: Partitions & Offsets (20 minutes)
+## Sub-Task 4: Partitions & Offsets
 
 **Objective:** Understand partition assignment and message ordering
 
@@ -340,7 +215,7 @@ Create 3 consumers that read from the topics you populated in Sub-Task 2. Use co
 
 Learn how Kafka assigns messages to partitions based on keys and how to track message positions within partitions.
 
-### Hints
+### Your Tasks
 
 **Step 1: Send messages with keys and observe partition assignment**
 - Create a producer that sends listing events with specific agent keys
@@ -383,49 +258,6 @@ Learn how Kafka assigns messages to partitions based on keys and how to track me
 - Verify ordering is guaranteed within a partition
 - Confirm ordering is NOT guaranteed across partitions
 
-### Your Tasks
-
-1. **Send events with keys and observe partition assignment:**
-   - Send 5 listing events with key='agent_1'
-   - Send 5 listing events with key='agent_2'
-   - Send 5 listing events with key='agent_3'
-   - Display which partition each message was assigned to
-   - Show the partition mapping for each agent
-
-2. **Verify partition assignment consistency:**
-   - Send additional messages with the same keys
-   - Confirm each agent consistently uses the same partition
-   - Display final mapping (agent_1 → partition X, etc.)
-   - Verify no agent's messages went to different partitions
-
-3. **Track offsets within a partition:**
-   - Read messages from a single partition
-   - Print offset for each message in order
-   - Verify offsets are sequential (0, 1, 2, ...)
-   - Check for any gaps in the offset sequence
-
-4. **Verify message ordering:**
-   - Consume messages from partition
-   - Confirm they arrive in the order they were sent
-   - Show that ordering is guaranteed within the partition
-   - Demonstrate that order is NOT guaranteed across partitions
-
-5. **Understand offset tracking:**
-   - Display consumer position after reading messages
-   - Show the next offset to be read
-   - Demonstrate how offsets track progress
-
-### Validation Checklist
-
-- [ ] Same key always maps to same partition
-- [ ] agent_1 consistently uses one partition
-- [ ] agent_2 consistently uses one partition
-- [ ] agent_3 consistently uses one partition
-- [ ] Offsets within a partition are sequential
-- [ ] No gaps exist in offset numbers
-- [ ] Messages from same key arrive in order
-- [ ] Consumer position accurately reflects offset progress
-
 ### Questions to Consider
 
 - How does Kafka determine which partition a message goes to?
@@ -437,7 +269,7 @@ Learn how Kafka assigns messages to partitions based on keys and how to track me
 
 ---
 
-## Sub-Task 5: Consumer Groups (20 minutes)
+## Sub-Task 5: Consumer Groups
 
 **Objective:** Implement parallel message processing with consumer groups
 
@@ -490,56 +322,6 @@ Create multiple consumers in a group that together process messages faster throu
 - Watch remaining consumer take over additional partitions
 - See if messages are still processed correctly
 
-### Your Tasks
-
-1. **Create consumer group 'notifications' with 2 consumers:**
-   - Start 2 consumers in the notifications group
-   - Both read from `listings` topic
-   - Display partition assignment for each consumer
-   - Show how many messages each consumer processes
-   - Verify all 10 messages are processed
-
-2. **Create consumer group 'analytics' with 3 consumers:**
-   - Start 3 consumers in the analytics group
-   - All read from `views` topic
-   - Display partition assignment for each
-   - Show message count per consumer
-   - Verify load is distributed among consumers
-   - Check that all 20 messages are received
-
-3. **Test rebalancing behavior:**
-   - Start 2 consumers in a test group
-   - While consuming, add a 3rd consumer
-   - Document partition reassignment
-   - Explain what happened during rebalancing
-   - Show before/after partition assignments
-
-4. **Measure performance improvement:**
-   - Process messages with 1 consumer, measure time
-   - Process messages with 2 consumers, measure time
-   - Calculate speedup (time_1 / time_2)
-   - Show that parallel processing is faster
-   - Document the performance gain
-
-5. **Test failure recovery:**
-   - Start 2 consumers in a group
-   - Begin consuming messages
-   - Kill one consumer
-   - Observe rebalancing and recovery
-   - Confirm remaining consumer processes all messages
-
-### Validation Checklist
-
-- [ ] Consumer group distributes partitions among consumers
-- [ ] Each consumer is assigned different partitions
-- [ ] Total partitions assigned equals topic partition count
-- [ ] Each consumer receives some messages
-- [ ] Total messages processed equals messages sent
-- [ ] Rebalancing occurs when consumer joins/leaves
-- [ ] Partition reassignment happens correctly
-- [ ] Parallel processing is faster than single consumer
-- [ ] Failed consumer's work is recovered by group
-
 ### Questions to Consider
 
 - How does Kafka decide which partitions go to which consumer?
@@ -549,28 +331,6 @@ Create multiple consumers in a group that together process messages faster throu
 - How does parallel processing improve performance?
 - What happens if a consumer in a group fails?
 - How long does rebalancing take?
-
----
-
-## 📋 Completion Checklist
-
-After completing all 5 sub-tasks, verify:
-
-- [ ] Sub-Task 1: 3 topics created with correct partition counts (3, 3, 2)
-- [ ] Sub-Task 2: 35 events sent total (10 + 20 + 5)
-- [ ] Sub-Task 3: All 35 events consumed successfully
-- [ ] Sub-Task 4: Partitions assigned correctly based on keys
-- [ ] Sub-Task 5: Consumer groups process in parallel
-
----
-
-## 🎯 Next Steps
-
-1. **Try implementations** - Follow each sub-task in order
-2. **Understand concepts** - Connect what you do to why it matters
-3. **Verify each step** - Run validation checks before moving forward
-4. **Review solutions** - See complete code in solutions/
-5. **Run demo** - Execute demo.py to see everything working together
 
 ---
 
@@ -605,10 +365,10 @@ After completing all 5 sub-tasks, verify:
 4. **Check Connection:** Can you connect to Kafka? (`telnet localhost 9092`)
 5. **Check Logs:** What do container logs say? (`docker logs <container>`)
 6. **Review hints** - Re-read the steps for each task
-7. **Check reference guide** - Look up concepts in [322]
+7. **Check reference guide** - Look up for common concepts
 8. **Compare with demo** - See how solution works
 
 ---
 
-Good luck! 🚀
+## Good luck! 🚀
 
