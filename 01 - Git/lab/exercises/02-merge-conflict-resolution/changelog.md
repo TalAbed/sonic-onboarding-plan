@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Real-time event processing with comprehensive monitoring
+- Real-time event processing with sub-millisecond latency and comprehensive monitoring
 - Data validation layer
 
 ### Fixed
