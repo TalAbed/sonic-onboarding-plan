@@ -15,3 +15,9 @@ Welcome to the Sonic team! This file lists our amazing developers and their cont
 - **Role**: Infrastructure Engineer
 - **Focus**: Distributed systems
 - **Fun Fact**: Always ready to lend a hand (or tail)! 🦊
+
+### Agam
+- **Name**: Agam Zigdon
+- **Role**: Software Engineer 
+- **Focus**: just learning for now
+- **Fun Fact**: I'm a book worm :/
